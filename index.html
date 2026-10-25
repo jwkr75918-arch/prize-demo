@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تجربة الأمن السيبراني</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 350px;
+  margin: 30px auto;
+}
+.gift { font-size: 75px; }
+button {
+  background: #22c55e;
+  padding: 14px 22px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#msg {
+  display: none;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="gift">🎁</div>
+  <h1>مبروك! ربحت جائزة</h1>
+  <p>اضغط لتكتشف المفاجأة!</p>
+  <button onclick="showMsg()">اكتشف جائزتك</button>
+  <div id="msg">
+    <h2>🛡️ انتبه!</h2>
+    <p>هذه محاكاة توعوية. لا تثق بالجوائز غير المتوقعة، وتحقق من الروابط قبل فتحها.</p>
+  </div>
+</div>
+<script>
+function showMsg() {
+  document.getElementById("msg").style.display = "block";
+}
+</script>
+</body>
+</html>
